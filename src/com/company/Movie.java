@@ -3,6 +3,7 @@ package com.company;
 public class Movie {
     private String title;
     private MovieGenre genre;
+//    czy price na pewno powinno być typu int? jaki lepszy typ można by tutaj użyć?
     private int price;
     private String director;
 
@@ -52,10 +53,12 @@ public class Movie {
     }
 
     public void printMovieDetails() {
+        // do zastanowienia: czy program działałby tak sami gdyby zamiast getterów użyć this.title itd.
         System.out.printf("Title: %s, Genre: %s, Price: %d€", getTitle(), getGenre(), getPrice());
         if (director != null && director.length() > 0) {
             System.out.printf(", Director: %s", getDirector());
         }
+        // czy ten pusty System.out.println jest potrzebny? Zastanów się co można zrobić żeby program działał tak samo ale tego pustego printa by nie było.
         System.out.println();
     }
 }
