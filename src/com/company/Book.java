@@ -3,6 +3,7 @@ package com.company;
 public class Book {
     private String title;
     private String author;
+//    analogicznie jak w Movie czy to dobry pomysł żeby price było typu int?
     private int price;
 
     public Book(String title, String author, int price) {
